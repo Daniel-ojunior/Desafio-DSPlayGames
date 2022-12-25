@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+
+    --color-green:#38AF90;
+    --color-white:#FFFFFF;
+    --color-gray:#797979;
+    --color-light-white:#F0F0F0;
+    --color-red:#DD7E92;
+    --color-dark-gray:#383838;
+    --color-light-gray:#C4C4C4;
+    --color-gray-border:#999999;
+    --color-black:#00000040;
+}
+
+html, body{
+
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-container{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-green);
+    height: 90px;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.75);
+
+}
+
+.nav-container h1{
+
+    font-size: 18px;
+}
+
+.nav-main{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+   
+}
+
+.nav-main-title{
+
+    display: flex;
+    color: var(--color-white);
+    align-items: center;
+    margin: 0px;
+}
+.menu{
+
+    display: flex;
+    align-items: center;
+    
+
+}
+.links{
+    display: none;
+
+}
+
+.links ul{
+
+    display: flex;
+    align-items: center;
+}
+
+.item-link{
+
+    list-style-type: none;
+    margin-left: 29px;
+    
+}
+
+.item-link a{
+
+    text-decoration: none;
+    color:var(--color-white);
+    font-size: 14px;
+
+}
+
+.nav-main-avatar{
+
+    width: 62px;
+    display: flex;
+    padding: 0;
+    margin: 0 0px 0px 29px;
+}
+
+.container{
+
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+
+}
+
+#notice {
+
+    padding-top: 90px;
+}
+
+#notice h2{
+
+    color: var(--color-gray);
+    margin-top: 40px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.notice-card {
+
+    background-color: var(--color-light-white);
+    border-radius: 8px;
+    padding: 13px;
+    margin: 10px;
+    margin-bottom: 28px;
+    box-shadow: 0px 4px 4px 0px var(--color-black);
+
+}
+
+.notice-card h3 {
+
+    color: var(--color-green);
+    font-size: 16px;
+    margin: 2px;
+}
+
+.notice-card h4 {
+
+    color: #797979;
+    margin: 2px;
+    font-size: 12px;
+}
+
+.notice-card hr{
+
+    color: var(--color-green);
+    margin: 0;
+}
+
+.notice-card p {
+
+    font-size: 10px;
+    color: var(--color-gray);
+    margin: 12px 0 12px 0;
+}
+
+.notice-date p{
+
+    font-size: 10px;
+    color: var(--color-green);
+    margin: 5px 0 0 0;
+}
+.full-notice-content a{
+
+    text-decoration: none;
+    color: #DD7E92;
+    font-size: 14px ;
+    font-weight: bold;
+}
+
+#notice button {
+
+    background-color: var(--color-red);
+    color: var(--color-white);
+    width: 244px;
+    height: 67px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    border-style: none;
+    cursor: pointer;
+
+}
+
+.button-notice{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#games{
+    display: flex;
+    background-color: var(--color-light-white);
+    flex-wrap: wrap;
+}
+
+.title-game h2 {
+
+  
+    color: var(--color-green);
+    font-size: 24px;
+    text-align: center;
+    margin: 40px 0 28px 0;
+}
+
+.game-container{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game-card{
+
+    width: 300px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    margin: 0px 10px 30px 10px;
+    
+}
+
+.game-card img{
+
+    border-radius: 8px 8px 0 0 ;
+}
+
+.card-description{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-description h3{
+
+    color: var(--color-gray);
+    font-size: 18px;
+    margin: 27px 0 0 0;
+}
+
+.decription-font{
+
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.decription-font h4 {
+
+    color: var(--color-green);
+    font-size: 14px;
+    padding-right: 4px;
+    margin: 0;
+
+}
+
+.decription-font p {
+
+    color: var(--color-gray);
+    font-size: 12px;
+    margin: 0;
+}
+
+.card-description h5{
+
+    color: var(--color-green);
+    font-size: 36px;
+    margin: 13px 0 15px 0;
+}
+
+#form{
+
+    padding: 10px;
+    background-color: var(--color-white);
+   
+}
+
+.form-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#form h2{
+
+    color: var(--color-gray);
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.form-card{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-light-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px 10px;
+
+}
+
+.fill{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fill input{
+
+   margin: 10px 0;
+   height: 50px;
+   border-radius: 4px;
+   border: 1px solid var(--color-gray);
+
+}
+
+.fil, input::placeholder{
+
+    font-size: 16px;
+    color: var(--color-light-gray);
+
+}
+
+.fill input{
+
+    padding: 22px;
+    font-size: 16px;
+    font-family:'Poppins', sans-serif;
+    color: var(--color-gray);
+}
+
+.options{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.options label{
+
+    font-size: 16px;
+    color: var(--color-gray);
+    justify-content: center;
+
+}
+
+.options input{
+
+    margin: 0;
+    width: 23px;
+    height: 23px;
+    align-items: center;
+    margin-right: 5px;
+    border: 1px solid var(--color-gray-border);
+}
+
+.op{
+
+    display: flex;
+    margin: 8px 0;
+    
+}
+
+.news label{
+
+    font-size: 16px;
+    color: var(--color-gray);
+
+}
+
+.news input{
+
+    width: 23px;
+    height: 23px;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.news{
+
+    display: flex;
+    margin: 8px 0;
+    margin-bottom: 38px;
+
+}
+
+.buttons{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons input{
+
+    height: 67px;
+    width: 244px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin:  10px 0;
+}
+
+.btn1{
+
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: bold;
+    border-style: none;
+}
+
+.btn2{
+    
+    background-color: var(--color-white);
+    color: var(--color-red);
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid var(--color-red);
+}
+
+#footer{
+
+    height: 302px;
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+    max-width: 100%;
+    display: flex;
+    margin-top: 30px;
+    padding: 28px 33px;
+
+}
+
+.footer-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.footer-content{
+
+   display: flex;
+   justify-content: center;
+      
+}
+
+.social a {
+
+    display: block;
+    color: var(--color-white);
+    text-decoration: none;
+    align-items: center;
+    font-size: 14px;
+}
+
+.direitos p{
+
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.polite a{
+
+    display:flex;
+    text-decoration: none;
+    color: var(--color-white);
+    justify-content: center;
+    font-size: 14px;
+
+}
+
+@media (min-width: 576px){
+
+    .title-game h2{
+
+        font-size: 30px;
+    }
+
+    #form h2{
+
+        font-size: 30px;
+    }
+
+    .links{
+        display: flex;
+    
+    }
+
+    .nav-container h1{
+
+        font-size: 20px;
+    }
+
+    .buttons{
+
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .buttons input{
+
+        margin: 0 13px;
+    }
+
+    .notice-card h3{
+
+        font-size: 20px;
+    }
+
+    .notice-card h4{
+
+        font-size: 14px;
+    }
+
+    .nav-container h1{
+
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 768px){
+
+    .title-game h2{
+
+        font-size: 36px;
+        margin: 40px 0 72px 0;
+    }
+
+    .form-card{
+
+        max-width: 790px;
+        padding: 52px 72px;
+    }
+
+    .buttons{
+
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .buttons input{
+
+        margin: 0 26px;
+    }
+
+    #form h2{
+
+        font-size: 36px;
+        margin: 40px;
+    }
+
+    .footer-container{
+
+        width: 990px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #footer{
+
+        height: 190px;
+        
+    }
+
+    #notice h2{
+
+        font-size: 36px;
+    }
+
+    .notice-card h3{
+
+        font-size: 24px;
+    }
+
+    .notice-card h4{
+
+        font-size: 16px;
+    }
+
+    .nav-container h1{
+
+        font-size: 24px;
+    }
+
+    .links{
+        display: flex;
+    
+    }
+
+    #games{
+
+        padding-bottom: 40px;
+    }
+
+    .notice-card{
+
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #footer{
+
+        margin-top: 51px;
+    }
+
+}
+
+
+
